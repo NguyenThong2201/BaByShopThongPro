@@ -31,6 +31,7 @@ class SlideController extends AbstractActionController{
 				]);
 			}
 			$data = $form->getData();
+			
 			$url = "public/img/".$_FILES['image']['name'];
 			$name= time().$_FILES['image']['name'];
 			move_uploaded_file($_FILES['image']['tmp_name'],"public/img/".$name);
